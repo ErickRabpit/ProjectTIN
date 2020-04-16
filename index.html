@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inicio Amerimuebles</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+</head>
+<body>
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" width="135px" style="margin-top: 9px"></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.html">Inicio</a><span> </span></li>
+					<li><a href="catalogo.html">Servicios</a><span> </span></li>
+					<li><a href="lista.html">Acerca de Nosotros</a><span> </span></li>
+				</ul>
+			</div>
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		</div>
+	</div>	
+	<div class="banner" id="home">
+		<div class="container">
+			<section class="slider">
+                <div class="flexslider">
+                	<div class="welcome-top">
+				<h1 style="color: white">Conoce a nuestros Super-Heroes</h1>
+			</div>
+                    <ul class="slides">
+						<li>
+								<div>
+									<img src="images/bannerlets-med.jpg">
+								</div>
+						</li>
+						<li>
+								<div>
+									<img src="images/bannerdodoes-med.jpg">
+								</div>
+						</li>
+						<li>
+								<div>
+									<img src="images/bannerbe-med.jpg">
+								</div>
+						</li>
+
+						<li>
+								<div>
+									<img src="images/bannerhad-med.jpg">
+								</div>
+						</li>
+						<li>
+								<div>
+									<img src="images/bannerdid-med.jpg">
+								</div>
+						</li>
+						<li>
+								<div>
+									<img src="images/bannercould-med.jpg">
+								</div>
+						</li>
+						<li>
+								<div>
+									<img src="images/bannercan-med.jpg">
+								</div>
+						</li>
+
+
+          </ul>
+        </div>
+      </section>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</div>
+	<div class="welcome">
+		<div class="container">
+			<div class="welcome-top">
+				<h1>BIENVENIDOS A NUESTRO SITIO WEB</h1>
+				<p>FIRST CLASS SUPERHEROES ® es la herramienta perfecta para el dominio de la base gramatical idiomática, la correcta aplicación y uso de los verbos auxiliares, verbos modales, frases verbales, verbos transitivos y formas gramaticales que en el idioma inglés, a diferencia del castellano, son de primordial importancia para la asimilación cognitiva del idioma.</p>
+			</div>
+		</div>
+	</div> 
+	<div class="nature">
+		<div class="container">
+			<div class="nature-top">
+				<h3>¿Porque First Class?</h3>
+				<p>First Class es un Instituto especializado de enseñanza en el idioma inglés y cuenta con una metodología novedosa de ensañanza.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 footer-left">
+					<p>First Class Institute</p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Síguenos</h3>
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="google"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>firstclass.help@firstclass.edu</h3>
+					<p>First Class Institute, 
+					<span>Av. America</span>
+					N# 1010
+					<span>72132132</span></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+									$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+</body>
+</html>
